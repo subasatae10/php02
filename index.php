@@ -7,31 +7,50 @@
 </head>
 <body>
     <?php
-    $score = 49;
+   /* $score = 49;
+    $grade = $_GET["grade"]; 
+    $grade = $_GET["grade"]; 
     echo "<H1>1.จงเขียนโปรแกรมด้วย php ที่รับคะแนนของนักเรียนที่กำหนดตัวเลขคงที่ แล้วคำนวณเกรดของนักเรียนตามเกณฑ์ดังนี้:</H1>
     ";
-    echo "<br>ผลลัพธ์:";
+   echo '<form action="index.php" method="get">';
+    echo'<input type="text" name="grade">';
+    echo '<br>';
+    echo '<br>';
+    echo '<button type="submit" value="Submit">Submit</button>'; 
+    echo '</form>';
+    echo "<br>ผลลัพธ์:";*/
+    
+    
 
-    if ($score>=80) {//score>=80เป็นเท็จ
-       echo "grade A";
-      } elseif ($score>=70){//score>=70เป็นเท็จ
+
+   /* if ($grade>=80) {//score>=80เป็นเท็จ
+       echo "คุณได้คะแนน$grade=grade A";
+      } elseif ($grade>=70){//score>=70เป็นเท็จ
         
-        echo "grade B";
+        echo "คุณได้คะแนน$grade=grade B";
         
-      }elseif ($score >=60) {//score>=60เป็นเท็จ
+      }elseif ($grade >=60) {//score>=60เป็นเท็จ
         # code...
-        echo "grade C";
-      }elseif ($score >=50) {//score>=50เป็นเท็จ
+        echo "คุณได้คะแนน$grade=grade C";
+      }elseif ($grade >=50) {//score>=50เป็นเท็จ
         # code...
         echo " grade D";
       }
        else {
-        echo "grade F";
-      }
+        echo "คุณได้คะแนน$grade=grade F";
+      }*/
+
+
     echo "<br><H1>2.ประยุกต์จากโจทย์ข้อ 1 โดยเปลี่ยนจากนักเรียนเป็น หอพักระดับ 1 ถึง 5 ดาว 
     (ใช้สัญลักษณ์ black star)</H1>";
     echo "<br>ผลลัพธ์:";
-    $price = 500;
+    $price = $_GET["x"];//รับค่าแบบเก็ทรับจากinput price
+    echo '<form action="index.php" method="get">';
+    echo '<input type="text" name="x">'; 
+    echo '<br>';
+    echo '<br>';
+    echo '<button type="submit" value="submit">submit </button>';
+    echo '</form>';
 
     if ($price>=15000) {//500>=15000เป็นเท็จ
        
@@ -53,7 +72,7 @@
         
         echo "☆";
     }
-    
+ 
     ?>
 
 
